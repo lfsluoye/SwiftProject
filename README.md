@@ -7,9 +7,12 @@ This project was totally inspired by [Allen朝辉](http://www.jianshu.com/p/5203
 
 ![Simple Stop Watch.gif](https://github.com/lfsluoye/SwiftProject/blob/master/Project01_SimpleTimer/Simple_Stop_Watch.gif)
 
+#### Project02 简单线程锁
+用NSLock
 [Project02_线程锁](https://github.com/lfsluoye/SwiftProject/tree/master/Project02_Lock)
 
-
+#### Project03 简单滚动图片
+用UICollection
 [Project03_图片滚动](https://github.com/lfsluoye/SwiftProject/tree/master/Project03_Carousel)
 ![Carousel.gif](https://github.com/lfsluoye/SwiftProject/blob/master/Project03_Carousel/Carousel.gif)
 
