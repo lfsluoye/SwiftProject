@@ -19,5 +19,10 @@ This project was totally inspired by [Allen朝辉](http://www.jianshu.com/p/5203
 #### Project04 GCD
 GCD的简单用法,同步串行,同步并行,异步串行,异步并行
 
+#### Project04 GCD_2
+-  给线程添加屏障
+-  回到主线程
+-  最常用创建异步线程方法(异步 全局队列)
+
 
 
