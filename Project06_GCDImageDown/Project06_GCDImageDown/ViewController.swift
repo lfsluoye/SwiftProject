@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     // MARK: 创建UI界面
     func createUI(){
         self.view.addSubview(downBtn)
-        self.view.addSubview(downIV)
+        
     }
     
     // MARK: 方法
@@ -66,7 +66,10 @@ class ViewController: UIViewController {
     
     lazy var downIV: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 20, y: 100, width: 200, height: 400))
+        imageView.backgroundColor = UIColor.red
         imageView.contentMode = UIViewContentMode.scaleAspectFit
+        //下载完图片才生成容器,有效节省内存
+        self.view.addSubview(imageView)
         return imageView
     }()
     
