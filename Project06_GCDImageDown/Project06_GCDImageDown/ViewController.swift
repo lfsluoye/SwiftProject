@@ -25,42 +25,48 @@ class ViewController: UIViewController {
     // MARK: 创建UI界面
     func createUI(){
         self.view.addSubview(downBtn)
+        self.view.addSubview(downIV)
     }
     
     // MARK: 方法
     func downLoadImage(){
-        dispatch_async(dispatch_get_global_queue(0, 0)) { 
+         DispatchQueue.global().async(execute: { 
             //    从网络上下载下来的的数据或者本地上传的数据--这个数据流肯定是二进制
             //    NSData 这个是 二进制类型
             //    URLWithString 可以自动把http/https开头的字符串地址，转化为URL
-            let imgURL = NSURL.init(string: self.imgPath)
+            let imgURL = URL.init(string: self.imgPath)
             
             //    dataWithContentsOfURL 到URL锁指定的地址中，把资源下载下来，这个过程是同步的
-            let data = NSData.init(contentsOfURL: imgURL!)
             
-            //    二进制数据转为 UIImage类型数据
-            let img = UIImage.init(data: data!)
             
-            //        会被用户感知的操作，放到主线程运行
-            dispatch_async(dispatch_get_main_queue(), { 
+            print("\(imgURL)")
+            let dataImg = try! Data.init(contentsOf: imgURL!)
+            
+//                二进制数据转为 UIImage类型数据
+            let img = UIImage.init(data: dataImg)
+//                    会被用户感知的操作，放到主线程运行
+            DispatchQueue.main.async(execute: {
                 self.downIV.image = img
             })
-        }
+         })
     }
     
     // MARK: 懒加载
     lazy var downBtn: UIButton = {
-        let btn = UIButton(type: .Custom)
-        btn.setTitle("开始下载", forState: .Normal)
-        btn.setTitle("高亮状态", forState: .Highlighted)
-        btn.backgroundColor = UIColor.clearColor()
-        btn.addTarget(self, action: #selector(downLoadImage), forControlEvents: .TouchUpInside)
+        let btn = UIButton(type: .custom)
+        btn.frame = CGRect(x: 20, y: 50, width: 60, height: 30)
+        btn.setTitle("开始下载", for: .normal)
+        btn.setTitleColor(UIColor.black, for: .normal);
+        btn.setTitle("高亮状态", for: .highlighted)
+        btn.setTitleColor(UIColor.blue, for: .highlighted)
+        btn.backgroundColor = UIColor.clear
+        btn.addTarget(self, action: #selector(downLoadImage), for: .touchUpInside)
         return btn
     }()
     
     lazy var downIV: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = UIViewContentMode.ScaleAspectFit
+        let imageView = UIImageView(frame: CGRect(x: 20, y: 100, width: 200, height: 400))
+        imageView.contentMode = UIViewContentMode.scaleAspectFit
         return imageView
     }()
     

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9E16DF1C1D8C26EE00956813"
+               BlueprintIdentifier = "9E5DECF31D8D566C008120A2"
                BuildableName = "Project06_GCDImageDown.app"
                BlueprintName = "Project06_GCDImageDown"
                ReferencedContainer = "container:Project06_GCDImageDown.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9E16DF1C1D8C26EE00956813"
+            BlueprintIdentifier = "9E5DECF31D8D566C008120A2"
             BuildableName = "Project06_GCDImageDown.app"
             BlueprintName = "Project06_GCDImageDown"
             ReferencedContainer = "container:Project06_GCDImageDown.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9E16DF1C1D8C26EE00956813"
+            BlueprintIdentifier = "9E5DECF31D8D566C008120A2"
             BuildableName = "Project06_GCDImageDown.app"
             BlueprintName = "Project06_GCDImageDown"
             ReferencedContainer = "container:Project06_GCDImageDown.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9E16DF1C1D8C26EE00956813"
+            BlueprintIdentifier = "9E5DECF31D8D566C008120A2"
             BuildableName = "Project06_GCDImageDown.app"
             BlueprintName = "Project06_GCDImageDown"
             ReferencedContainer = "container:Project06_GCDImageDown.xcodeproj">
