@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    // MARK: private Method
+    func downLoadImage(){
+        
     }
     
     // MARK: 懒加载
@@ -26,6 +31,32 @@ class ViewController: UIViewController {
                URL.init(string: address3)!]
         
         return arr
+    }()
+    lazy var imageViewList:Array<UIImageView> = {
+        var arr = [UIImageView]()
+        
+        for i in self.imageURLs {
+            let iv = UIImageView()
+            iv.contentMode = UIViewContentMode.scaleAspectFit
+            self.view.addSubview(iv)
+            iv.snp.makeConstraints({ (make) in
+                
+            })
+        }
+        
+        return arr
+    }()
+    /// 下载按钮
+    lazy var downBtn: UIButton = {
+        let btn = UIButton(type: .custom)
+        btn.frame = CGRect(x: 20, y: 50, width: 60, height: 30)
+        btn.setTitle("开始下载", for: .normal)
+        btn.setTitleColor(UIColor.black, for: .normal);
+        btn.setTitle("高亮状态", for: .highlighted)
+        btn.setTitleColor(UIColor.blue, for: .highlighted)
+        btn.backgroundColor = UIColor.clear
+        btn.addTarget(self, action: #selector(downLoadImage), for: .touchUpInside)
+        return btn
     }()
 
 }
