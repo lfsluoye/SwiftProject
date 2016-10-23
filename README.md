@@ -1,4 +1,4 @@
-﻿# SwiftProject
+# SwiftProject
 I am Li Fushuai ,a iOS Development Engineer and currently learning Swift.
 This project was totally inspired by [Allen朝辉](http://www.jianshu.com/p/52032bc4cbe4)'s [30DaysofSwift](https://github.com/allenwong/30DaysofSwift) project, after read his article I made a decision to put my every single day to write Swift, this's the final code of 30 tiny Swift projects learn from him.Code is Similar but not the same except for GIF and forgive me, don't bother to do it.
 
@@ -19,10 +19,16 @@ This project was totally inspired by [Allen朝辉](http://www.jianshu.com/p/5203
 #### Project04 GCD
 GCD的简单用法,同步串行,同步并行,异步串行,异步并行
 
-#### Project04 GCD_2
+#### Project05 GCD_2
 -  给线程添加屏障
 -  回到主线程
 -  最常用创建异步线程方法(异步 全局队列)
+
+#### Project06_GCDImageDown
+异步下载图纸
+
+#### Project07_GCDDownImages
+异步下载多张图纸,通过隔断,下载完成后一起显示
 
 
 
