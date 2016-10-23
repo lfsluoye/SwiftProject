@@ -60,7 +60,7 @@ class ViewController: UIViewController {
     //在全局队列上运行任务，全局队列是 并行队列
     /*异步 全局队列*/
     func asyncGlobalQueue(){
-        let queue = DispatchQueue.global(priority: 0)
+        let queue = DispatchQueue.global()
         
         printAsync(queue)
     }
