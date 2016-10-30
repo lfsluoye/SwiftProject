@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project08_GCD_Group_Single/ViewController.swift"
+            timestampString = "499183946.88947"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "TheOneAndOnlyKraken"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_FDE098F6FFC5CBF15D9753C7A901723A_func0"
+                  moduleName = "Project08_GCD_Group_Single"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liran/Desktop/SwiftProject/Project08_GCD_Group_Single/Project08_GCD_Group_Single/ViewController.swift"
+                  timestampString = "499183972.574098"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Project08_GCD_Group_Single.TheOneAndOnlyKraken.sharedInstance.getter : Project08_GCD_Group_Single.TheOneAndOnlyKraken"
+                  moduleName = "Project08_GCD_Group_Single"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liran/Desktop/SwiftProject/Project08_GCD_Group_Single/Project08_GCD_Group_Single/ViewController.swift"
+                  timestampString = "499183972.576366"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -30,5 +30,9 @@ GCD的简单用法,同步串行,同步并行,异步串行,异步并行
 #### Project07_GCDDownImages
 异步下载多张图纸,通过隔断,下载完成后一起显示
 
+#### Project08_GCD_Group_Single
+分组和单例
+
+
 
 
