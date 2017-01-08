@@ -35,5 +35,13 @@ GCD的简单用法,同步串行,同步并行,异步串行,异步并行
 #### Project09_AlertController
 三种简单Alert方式
 
+#### Project10_Animation
+一只可爱小企鹅的动画
+- 左滑,像左走
+- 右滑,像右走
+- 点击,弹跳
+- 长按,下沉
 
+#### Project11_AnimationWithQuartzCore
+点击button可看动画效果,暂停时,拖动
 
